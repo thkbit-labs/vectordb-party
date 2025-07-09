@@ -1,0 +1,37 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.unicodeHighlight.includeComments": true,
+  "editor.unicodeHighlight.nonBasicASCII": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.useFlatConfig": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "nuxtr.defaultPackageManager": "Bun",
+  "nuxtr.openItemsAfterCreation": true,
+  "nuxtr.piniaFiles.defaultTemplate": "setup",
+  "nuxtr.vueFiles.firstTag": "script",
+  "nuxtr.vueFiles.style.alwaysScoped": true,
+  "ruff.lineLength": 25,
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui \\=([^;]*);", "'([^']*)'"],
+    ["ui \\=([^;]*);", "\"([^\"]*)\""],
+    ["ui \\=([^;]*);", "\\`([^\\`]*)\\`"],
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.lint.cssConflict": "error",
+  "vue.autoInsert.dotValue": true,
+  "vue.format.script.initialIndent": true,
+  "vue.format.style.initialIndent": true,
+  "vue.inlayHints.missingProps": true,
+  "ruff.lint.enable": false
+}
