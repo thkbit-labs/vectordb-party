@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    labels:
+      - "chore(gh-actions)"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "bun"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    directory: "/"
+    ignore:
+      # Ignore major version bumps for all npm dependencies
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    open-pull-requests-limit: 6
+    schedule:
+      interval: "weekly"
