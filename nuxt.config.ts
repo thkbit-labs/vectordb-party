@@ -1,15 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-15",
+  compatibilityDate: "2025-07-15",
+
   css: ["~/assets/css/main.css"],
 
   devtools: { enabled: true },
-  future: {
-    compatibilityVersion: 4,
-  },
+
+  future: {},
 
   htmlValidator: {
     failOnError: true,
+    options: {
+      extends: [
+        "html-validate:document",
+        "html-validate:recommended",
+        "html-validate:standard",
+        "html-validate:a11y",
+      ],
+    },
   },
 
   modules: [
