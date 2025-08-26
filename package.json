@@ -27,7 +27,7 @@
     "@nuxtjs/html-validator": "2.1.0",
     "nuxt": "^4.0.0",
     "nuxt-security": "2.2.0",
-    "vue": "^3.5.17",
+    "vue": "^3.5.20",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
